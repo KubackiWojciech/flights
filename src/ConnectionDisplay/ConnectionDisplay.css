@@ -1,0 +1,11 @@
+.portsContainer {
+    height: 40px;
+    display: flex;
+}
+
+.port {
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
