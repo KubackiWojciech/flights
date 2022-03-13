@@ -1,9 +1,0 @@
-#form-container {
-    background-color: rgb(45,98,176);
-    width: 300px;
-    height: 500px;
-}
-
-#form-container > * {
-    margin: 20px;
-}
