@@ -3,10 +3,10 @@ import { useBetween } from "use-between";
 
 import { createGraph } from "./Graph";
 
-const input = [['ATH', 'EDI'], ['ATH', 'GLA'], ['ATH', 'CTA'], ['BFS', 'CGN'], ['BFS', 'LTN'], ['BFS', 'CTA'], ['BTS', 'STN'], ['BTS', 'BLQ'], ['CRL', 'BLQ'], ['CRL', 'BSL'], ['CRL', 'LTN'], ['DUB', 'LCA'], ['LTN', 'DUB'], ['LTN', 'MAD'], ['LCA', 'HAM'], ['EIN', 'BUD'], ['EIN', 'MAD'], ['HAM', 'BRS'], ['KEF', 'LPL'], ['KEF', 'CGN'], ['SUF', 'LIS'], ['SUF', 'BUD'], ['SUF', 'STN'], ['STN', 'EIN'], ['STN', 'HAM'], ['STN', 'DUB'], ['STN', 'KEF']];
+export const input = [['ATH', 'EDI'], ['ATH', 'GLA'], ['ATH', 'CTA'], ['BFS', 'CGN'], ['BFS', 'LTN'], ['BFS', 'CTA'], ['BTS', 'STN'], ['BTS', 'BLQ'], ['CRL', 'BLQ'], ['CRL', 'BSL'], ['CRL', 'LTN'], ['DUB', 'LCA'], ['LTN', 'DUB'], ['LTN', 'MAD'], ['LCA', 'HAM'], ['EIN', 'BUD'], ['EIN', 'MAD'], ['HAM', 'BRS'], ['KEF', 'LPL'], ['KEF', 'CGN'], ['SUF', 'LIS'], ['SUF', 'BUD'], ['SUF', 'STN'], ['STN', 'EIN'], ['STN', 'HAM'], ['STN', 'DUB'], ['STN', 'KEF']];
 
 export const GetSetPath = () => {
-    const [path, setpath] = useState(['one', 'two']);
+    const [path, setpath] = useState([]);
 
     return {path, setpath};
 }

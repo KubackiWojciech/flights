@@ -1,12 +1,21 @@
 .portsContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: 600px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
     padding: 0;
+
+    flex-wrap: wrap;
+
+    width: 100vp;
+}
+
+.portsContainer > * {
+    flex: 0 0 50px;
 }
 
 .portsContainer > :last-child {
@@ -16,7 +25,6 @@
 .port {
     height: 100px;
     width: 100px;
-    margin: 5px;
     display: block;
     text-align: center;
     justify-content: center;

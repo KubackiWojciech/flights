@@ -11,19 +11,12 @@ export default function ConnectionDisplay() {
   const {path} = useBetween(GetSetPath);
 
   return (
-    <ul className = 'portsContainer'>{
-      path.map(name => PortPoint(name))
-      }</ul>
+    <ul className = 'portsContainer'> {
+      path ? path.map(name => PortPoint(name)) : 'Wrong port name'
+      } 
+    </ul>
   )
 }
-
-const VisualConnections = props => {
-  return (
-    <>
-      props.map
-    </>
-  )
-};
 
 const PortPoint = (name) => {
   return (
@@ -32,7 +25,8 @@ const PortPoint = (name) => {
       <IoIosAirplane  className='icon'/>
       {name}
     </li>
-      <HiArrowNarrowRight className='arrow'/>
+    
+    <HiArrowNarrowRight className='arrow'/>
     </>
   )
 }

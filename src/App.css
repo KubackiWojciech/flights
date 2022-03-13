@@ -4,11 +4,10 @@ body {
     display: flex;
     justify-content: center;
     color: white;
+    margin: 30px;
 }
 
 #root {
     display: flex;
     justify-content: center;
-    /* display: flex;
-    justify-content: center; */
 }
