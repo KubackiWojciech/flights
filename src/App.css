@@ -1,6 +1,14 @@
 body {
-    background-image: linear-gradient(to right, red, white);
+    background-image: linear-gradient(to right, rgb(52,97,165), rgb(20,67,144));
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    margin: 30px;
+    color: white;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }

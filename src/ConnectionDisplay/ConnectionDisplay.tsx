@@ -2,7 +2,7 @@ import { useBetween } from 'use-between';
 
 import { GetSetPath } from '../ShortestPath'
 
-// import BsArrowRight from 'react-icons'
+import {HiArrowNarrowRight} from 'react-icons/hi'
 import {IoIosAirplane} from 'react-icons/io'
 
 import './ConnectionDisplay.css'
@@ -11,9 +11,9 @@ export default function ConnectionDisplay() {
   const {path} = useBetween(GetSetPath);
 
   return (
-    <div className = 'portsContainer'>{
+    <ul className = 'portsContainer'>{
       path.map(name => PortPoint(name))
-      }</div>
+      }</ul>
   )
 }
 
@@ -27,10 +27,12 @@ const VisualConnections = props => {
 
 const PortPoint = (name) => {
   return (
-    <div className="port">
-      <IoIosAirplane />
+    <>
+    <li className="port">
+      <IoIosAirplane  className='icon'/>
       {name}
-
-    </div>
+    </li>
+      <HiArrowNarrowRight className='arrow'/>
+    </>
   )
 }
