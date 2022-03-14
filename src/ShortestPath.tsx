@@ -11,16 +11,6 @@ export const GetSetPath = () => {
     return {path, setpath};
 }
 
-const generateConnections = () => {
-    let startInput: HTMLInputElement = document.querySelector('#start');
-    let endInput: HTMLInputElement = document.querySelector('#end');
-
-    let start = startInput.value;
-    let end = endInput.value;
-
-    return createGraph(input).shortestPath(start, end);
-}
-
 export const ButtonToFindPath = () => {
     const {setpath} = useBetween(GetSetPath);
 
@@ -29,4 +19,14 @@ export const ButtonToFindPath = () => {
     return (
         <button onClick = {() => setpath(p)} className="btn btn-primary">Find connection</button>
     )
+}
+
+const generateConnections = () => {
+    let startInput: HTMLInputElement = document.querySelector('#start');
+    let endInput: HTMLInputElement = document.querySelector('#end');
+
+    let start = startInput.value;
+    let end = endInput.value;
+
+    return createGraph(input).shortestPath(start, end);
 }

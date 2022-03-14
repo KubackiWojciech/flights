@@ -1,22 +1,13 @@
-import './FormContainer.css';
 import {ButtonToFindPath} from '../ShortestPath';
-import ListOfPorts from './ListOfPorts';
+import InputField from './InputField';
+
+import './FormContainer.css';
 
 export default function FormContainer() {
   return (
     <div id='form-container' >
-      <div className="form-group">
-        <label>Departure airport</label>
-        <select id = 'start' className="form-control">
-          <ListOfPorts />
-        </select>
-      </div>
-      <div className="form-group">
-        <label>Arrival airport</label>
-        <select id = 'end' className="form-control">
-          <ListOfPorts />
-        </select>
-      </div>
+      <InputField label = 'Departure airport' id = 'start' />
+      <InputField label = 'Arrival airport' id = 'end' />
       <ButtonToFindPath />
     </div>
   )
