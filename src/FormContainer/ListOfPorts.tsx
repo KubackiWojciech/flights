@@ -5,7 +5,7 @@ const ports = ['ATH', 'BSL', 'BFS', 'BLQ', 'BTS', 'BRS', 'CRL', 'BUD', 'DUB', 'E
 export default function ListOfPorts() {
   return (
     <>
-    {ports.map((v, index) => <option value = {v} key = {index}>{v}</option> )}
+      {ports.map((v, index) => <option value={v} key={index}>{v}</option>)}
     </>
   )
 }
